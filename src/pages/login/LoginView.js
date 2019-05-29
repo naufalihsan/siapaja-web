@@ -12,14 +12,14 @@ import {
 } from "@material-ui/core";
 import classnames from "classnames";
 
-import logo from "./logo.svg";
+import logo from "./mecca.svg";
 import google from "../../images/google.svg";
 
 const Login = ({ classes, ...props }) => (
   <Grid container className={classes.container}>
     <div className={classes.logotypeContainer}>
       <img src={logo} alt="logo" className={classes.logotypeImage} />
-      <Typography className={classes.logotypeText}>Material Admin</Typography>
+      <Typography className={classes.logotypeText}>SiapAja</Typography>
     </div>
     <div className={classes.formContainer}>
       <div className={classes.form}>
@@ -35,9 +35,6 @@ const Login = ({ classes, ...props }) => (
         </Tabs>
         {props.activeTabId === 0 && (
           <React.Fragment>
-            <Typography variant="h1" className={classes.greeting}>
-              Good Morning, User
-            </Typography>
             <Button size="large" className={classes.googleButton}>
               <img src={google} alt="google" className={classes.googleIcon} />
               &nbsp;Sign in with Google
@@ -207,7 +204,7 @@ const Login = ({ classes, ...props }) => (
         )}
       </div>
       <Typography color="primary" className={classes.copyright}>
-        © 2014-2019 Flatlogic, LLC. All rights reserved.
+        © 2019 SiapAja. All rights reserved.
       </Typography>
     </div>
   </Grid>
